@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
+
+/* Reset das propriedades */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    background: #FFBAA1;
+}
+
+.container {
+    max-width: 1292px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.logo-img {
+    padding: 6% 1%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.nav-buttom {
+    width: 121px;
+    height: 42px;
+    left: 1094px;
+    top: 83px;
+    background: #110ACD;
+    border-radius: 4px;
+    color: white;
+}
+
+.firstPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.firstPage-text-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.firstPage-text {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 41px;
+    line-height: 57px;
+    color: #000000;
+    text-align: right;
+}
+
+.firstPage-img3 {
+    max-width: 500px;
+    width: 100%;
+    /* Máximo da largura da imagem */
+    height: auto;
+    float: right;
+    /* Máximo da altura da imagem */
+    /* min-height: auto; */
+    /* Mínimo da altura, por padrão “auto” */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .firstPage {
+        max-width: 414px;
+        display: flex;
+        gap: 1%;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+    .firstPage-text {
+        max-width: 414px;
+        width: 100%;
+        height: auto;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #000000;
+        text-align: center;
+    }
+    .imgs {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .firstPage-img3 {
+        size: 30%;
+        width: 100%;
+        /* Máximo da largura da imagem */
+        height: auto;
+        /* Máximo da altura da imagem */
+        /* min-height: auto; */
+        /* Mínimo da altura, por padrão “auto” */
+        background-color: #000000;
+    }
+}
